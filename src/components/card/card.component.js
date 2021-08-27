@@ -131,7 +131,7 @@ export const ArticleDetail = ({slug}) =>{
 
     useEffect(()=>{
 
-        axios.get(`http://mgthura404.herokuapp.com/blog/${slug}`)
+        axios.get(`https://mgthura404.herokuapp.com/blog/${slug}`)
             .then((res)=>{
                 console.log(res.data.title);
                 setArticle(res.data);

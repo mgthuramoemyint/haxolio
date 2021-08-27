@@ -29,7 +29,7 @@ export const ArticleLists = () => {
     useEffect(() => {
         let mounted = true;
         if (mounted) {
-            axios.get("http://localhost/blog/")
+            axios.get("http://mgthura404.herokuapp.com/blog/")
             .then((res) => {
                 setArticles(res.data.results);
                 const buffer = {
@@ -86,7 +86,7 @@ export const ArticleLists = () => {
 export const ArticleSearchResult = ({keyword}) =>{
     let [article, setArticle] = useState(undefined);
     useEffect(() => {
-        axios.get(`http://localhost/blog/search/${keyword}`)
+        axios.get(`http://mgthura404.herokuapp.com/blog/search/${keyword}`)
         .then((res) => {
             setArticle(res.data);
         })

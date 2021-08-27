@@ -3,7 +3,7 @@ import styles from './blog.module.css'
 import axios from 'axios'
 import {ArticleOverview, IntroFixedCol} from '../../components/card/card.component'
 import { DataNotFound } from '../../components/handler/handler.component'
-
+import { Link } from 'react-router-dom'
 
 import { CgPlayTrackNext, CgPlayTrackPrev } from 'react-icons/cg'
 import Loading from '../../components/animations/loading.component'

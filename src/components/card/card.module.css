@@ -14,7 +14,7 @@
   color:rgb(55, 55, 255);
 }
 
-.hl{
+.markdown h1 ,.hl{
     font-weight: bold;
     color:black;
     padding:0.2rem;
